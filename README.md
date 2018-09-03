@@ -1,3 +1,43 @@
+[![seo.png](https://s8.postimg.cc/crzriqrad/seo.png)](https://postimg.cc/image/ln0lt9g2p/)
+
+# SEOLLAR
+
+*S.E.O.llar (Search Engine Optimization Dollar)*
+
+**A LAYER 2 SYSTEM BUILT ON TOP OF THE LATEST AEON PROTOCOL**
+
+[![seollar.png](https://s8.postimg.cc/5i9lmcshx/seollar.png)](https://postimg.cc/image/sjq6s3s5d/)
+
+Seollar is a fork of Aeon (with it's own seperate block chain) that is the utility of methodise.me `- disclaimer: Seollar will always fork the lastest stable version of Aeon and run a layer 2 service on top.` "This is the only currency for making SEO propagation rewardable by pegging swarms of browser mining power to unique, real world, page hits and backlinks!"
+
+**The only changes are:**
+
+- **30 minute block time increase gives Seollar enought time to track and reward content creators for unique page hits**
+- **Mining is exclusivly for content creators and visitors of Methodise.me** (pw protected)
+- **Integrated SEO backlink settlement contracts make the currency notable!**
+
+> **Future goals:**
+>
+> - The web based block chain explorer shall render scrapable seo messages (a prettifyed dofollow link link per tx). This requires users to add an url, image and descrition to each tx or revert to (optional) account defaults
+> - built-in btc exhange [buy and sell] (seo reach for websites)
+
+# What is this?
+
+Seollar rewards content creators for creating interesting, viral webpages, the most popular pages become mass mined by the viewers! In addition the page viewers will earn Seolla by adding thier Aeon/seolla address (new users can claim what they have already annoymously mined).
+
+# How are rewards fair?
+
+Seollar blocks have a reward that is representitive of popularity (50/50 split between time spent mining and unique page hit fingerprints within the block time). This stops botnets mining thier own content and encorages new viewers to join in, creating content and mining equally with everyone else
+
+# Why should you buy?
+
+The reason to buy Seollar is to lock the money into a variety of flexible bounty based settlement-contracts, built to your SEO needs. The person(s) that will unlock and gain the coins from the settlement will be the participants (external websites) to display your http backlink (seo html snippet) for `x` days on their url(s) and the unlocked coin reward will be devided between them
+
+------------------------------------------------
+# BUILT WITH: 
+
+[![aeonlogo.jpg](https://s8.postimg.cc/n4cvcvvmt/aeonlogo.jpg)](https://postimg.cc/image/qnyt2oych/)
+
 # Aeon
 
 Copyright (c) 2014-2018, AEON, The Monero Project.   
