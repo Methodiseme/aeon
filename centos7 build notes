@@ -1,14 +1,19 @@
-wget http://www.cmake.org/files/v3.0/cmake-3.0.0.tar.gz
-tar -zxvf cmake-3.0.0.tar.gz
-cd cmake-3.0.0
-./bootstrap 
-gmake 
-gmake install
-mv cmake-3.0.0 /usr/local/
-nano ~/.bashrc
-//at the end paste
-PATH=/usr/local/cmake-3.0.0/bin:$PATH
-export PATH
+````
+    wget http://www.cmake.org/files/v3.0/cmake-3.0.0.tar.gz
+    tar -zxvf cmake-3.0.0.tar.gz
+    cd cmake-3.0.0
+    ./bootstrap 
+    gmake 
+    gmake install
+    mv cmake-3.0.0 /usr/local/
+    nano ~/.bashrc
+````
+    
+at the end paste
+
+    PATH=/usr/local/cmake-3.0.0/bin:$PATH
+    export PATH
+
 //...save
 cd /usr/local/cmake-3.0.0
 mkdir share
