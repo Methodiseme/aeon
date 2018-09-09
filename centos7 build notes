@@ -1,4 +1,8 @@
-````
+-----------------------
+
+cmake 3
+
+
     wget http://www.cmake.org/files/v3.0/cmake-3.0.0.tar.gz
     tar -zxvf cmake-3.0.0.tar.gz
     cd cmake-3.0.0
@@ -7,60 +11,79 @@
     gmake install
     mv cmake-3.0.0 /usr/local/
     nano ~/.bashrc
-````
+
     
 at the end paste
 
     PATH=/usr/local/cmake-3.0.0/bin:$PATH
     export PATH
 
-//...save
-cd /usr/local/cmake-3.0.0
-mkdir share
-cp -R /usr/local/share/cmake-3.0/ share/
-reboot
+...save
+
+    cd /usr/local/cmake-3.0.0
+    mkdir share
+    cp -R /usr/local/share/cmake-3.0/ share/
+
+
+    reboot
+    
 
 cmake -v //should show 3
 
+-----------------------
+
+zeromq
 
 
-sudo yum install -y epel-release
-sudo yum install -y zeromq-devel
+    sudo yum install -y epel-release
+    sudo yum install -y zeromq-devel
 
 
 
-wget https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.tar.bz2
+-----------------------
 
-tar -xzf boost_1_*
-cd boost_1_*
+Get newer version boost than yum version of boost
 
-./bootstrap.sh --prefix=/usr/local
-./b2 install --prefix=/usr/local --with=all
+
+    wget https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.tar.bz2
+
+    tar -xzf boost_11_66_0
+    cd boost_11_66_0
+    
+seollar looks for boost in /usr/local/boost
+
+    ./bootstrap.sh --prefix=/usr/local
+    ./b2 install --prefix=/usr/local --with=all
 
 ------------------------
 
+get boost libraries that match boost version
 
-wget https://rpmfind.net/linux/fedora/linux/development/rawhide/Everything/aarch64/os/Packages/b/boost-devel-1.66.0-14.fc29.aarch64.rpm
+    wget https://rpmfind.net/linux/fedora/linux/development/rawhide/Everything/aarch64/os/Packages/b/boost-devel-1.66.0-14.fc29.aarch64.rpm
+
+    rpm -i ^^^ the file ^^^
 
 
-rpm -i ^^^ the file ^^^
+------------------------
 
+install seollar
 
+    git clone https://github.com/Methodiseme/seollar.git
+    cd seollar/
+    mkdir dist
+    cd dist
+    cmake ../
+    make
+    
+------------------------
 
-//then
+To start seollar:
 
-git clone https://github.com/Methodiseme/seollar.git
-cd seollar/
-mkdir dist
-cd dist
-cmake ../
-make
+    cd src
+    ./seollar
 
-//To start aeond:
+Syncing will take some time. Once done syncing you can setup your first wallet. To start simplewallet:
 
-cd src
-./seollar
-//Syncing will take some time. Once done syncing you can setup your first wallet. To start simplewallet:
+    ./simplewallet
 
-./simplewallet
-//Then follow the instructions on setting up your first wallet
+Then follow the instructions on setting up your first wallet ...
