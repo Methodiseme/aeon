@@ -70,9 +70,9 @@ seollar looks for boost in /usr/local/boost
 
 get boost libraries that match boost version
 
-    wget https://rpmfind.net/linux/fedora/linux/development/rawhide/Everything/aarch64/os/Packages/b/boost-devel-1.66.0-14.fc29.aarch64.rpm
+    wget https://rpmfind.net/linux/fedora/linux/development/rawhide/Everything/x86_64/os/Packages/b/boost-devel-1.66.0-14.fc29.x86_64.rpm
 
-    rpm -i ^^^ the file ^^^
+    yum install ^^^ the file ^^^
 
 
 ------------------------
