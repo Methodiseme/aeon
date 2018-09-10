@@ -58,8 +58,8 @@ Get newer version boost than yum version of boost
 
     wget https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.tar.bz2
 
-    tar -xzf boost_11_66_0
-    cd boost_11_66_0
+    tar -xzf boost_1_66_0
+    cd boost_1_66_0
     
 seollar looks for boost in /usr/local/boost
 
@@ -74,10 +74,14 @@ get boost libraries that match boost version
 
     yum install ^^^ the file ^^^
     
-did yum just install the lower versions!!!???
+    
+    
+####    did yum just install the lower versions!!!???
+    
     
     ln -s /usr/local/include/boost /usr/include/boost
 
+    cmake .. -DBOOST_ROOT="/usr/include/boost"
 
 ------------------------
 
