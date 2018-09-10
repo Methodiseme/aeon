@@ -73,6 +73,10 @@ get boost libraries that match boost version
     wget https://rpmfind.net/linux/fedora/linux/development/rawhide/Everything/x86_64/os/Packages/b/boost-devel-1.66.0-14.fc29.x86_64.rpm
 
     yum install ^^^ the file ^^^
+    
+did yum just install the lower versions!!!???
+    
+    ln -s /usr/local/include/boost /usr/include/boost
 
 
 ------------------------
