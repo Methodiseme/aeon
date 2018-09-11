@@ -60,39 +60,81 @@ Get newer version boost than yum version of boost
 
     tar -xzf boost_1_66_0
     cd boost_1_66_0
-    
-seollar looks for boost in /usr/local/boost
+    ./bootstrap.sh --prefix=/opt/boost
+    ./b2 install --prefix=/opt/boost --with=all
 
-    ./bootstrap.sh --prefix=/usr/local
-    ./b2 install --prefix=/usr/local --with=all
-
-------------------------
+------------------------skip this part (maybe!!!)
 
 get boost libraries that match boost version
 
     wget https://rpmfind.net/linux/fedora/linux/development/rawhide/Everything/x86_64/os/Packages/b/boost-devel-1.66.0-14.fc29.x86_64.rpm
 
-    yum install ^^^ the file ^^^
-    
-    
-    
-####    did yum just install the lower versions!!!???
+    rpm -i ^^^ the file ^^^
     
     
     ln -s /usr/local/include/boost /usr/include/boost
 
     cmake .. -DBOOST_ROOT="/usr/include/boost"
+    
+    
+------------------------
+
+copy
+https://github.com/zeromq/cppzmq/blob/master/zmq.hpp
+
+nano /usr/local/include/zmq.hpp
+paste and save
+
+------------------------
+
+
+    yum install libsodium-devel
+
+    yum install graphviz
+
+    yum install readline-devel
+
+    wget http://rpmfind.net/linux/centos/7.5.1804/os/x86_64/Packages/pcsc-lite-devel-1.8.8-7.el7.i686.rpm
+    
+    yum install ^^^ the file ^^^
+    
+    yum install miniupnpc-devel
+    
+    yum install pcsc-lite-devel
+
+
 
 ------------------------
 
 install seollar
 
-    git clone https://github.com/Methodiseme/seollar.git
+    git clone --recursive https://github.com/Methodiseme/seollar.git
     cd seollar/
     mkdir dist
     cd dist
     cmake ../
     make
+    
+    
+!!!!!!!!!!!!!!!!!!!!!!!!
+error at 65%
+
+[ 65%] Building CXX object src/common/CMakeFiles/obj_common.dir/download.cpp.o
+In file included from /root/seollar/contrib/epee/include/net/http_client.h:41:0,
+                 from /root/seollar/src/common/download.cpp:37:
+/root/seollar/contrib/epee/include/net/net_helper.h: In member function ‘void epee::net_utils::blocked_mode_client::shutdown_ssl()’:
+/root/seollar/contrib/epee/include/net/net_helper.h:576:26: error: ‘boost::asio::ssl::error’ has not been declared
+        boost::asio::ssl::error::stream_truncated
+                          ^
+make[2]: *** [src/common/CMakeFiles/obj_common.dir/download.cpp.o] Error 1
+make[1]: *** [src/common/CMakeFiles/obj_common.dir/all] Error 2
+make: *** [all] Error 2
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+    
+    
     
 ------------------------
 
