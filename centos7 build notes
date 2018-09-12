@@ -58,26 +58,13 @@ Get newer version boost than yum version of boost
 
     
 
-    wget https://www.boost.org/users/history/version_1_58_0.html
-    tar -xzf boost_1_58_0.tar.bz2
+    wget http://sourceforge.net/projects/boost/files/boost/1.58.0/boost_1_58_0.tar.bz2
+    tar -xvjf boost_1_58_0.tar.bz2
     cd boost_1_58_0
     ./bootstrap.sh --prefix=/opt/boost
     ./b2 install --prefix=/opt/boost --with=all
 
-------------------------skip this part (maybe!!!)
 
-get boost libraries that match boost version
-
-    wget https://rpmfind.net/linux/fedora/linux/development/rawhide/Everything/x86_64/os/Packages/b/boost-devel-1.66.0-14.fc29.x86_64.rpm
-
-    rpm -i ^^^ the file ^^^
-    
-    
-    ln -s /usr/local/include/boost /usr/include/boost
-
-    cmake .. -DBOOST_ROOT="/usr/include/boost"
-    
-    
 ------------------------
 
 copy
